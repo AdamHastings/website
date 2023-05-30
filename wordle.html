@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Wordle Score Calculator</h2>
+
+<script>
+  function calculate() {
+    console.log("hello");
+    var g1 = document.getElementById("g1").value;
+    var g2 = document.getElementById("g2").value;
+    var g3 = document.getElementById("g3").value;
+    var g4 = document.getElementById("g4").value;
+    var g5 = document.getElementById("g5").value;
+    var g6 = document.getElementById("g6").value;
+    var played = document.getElementById("played").value;
+    var winpct = document.getElementById("winpct").value;
+
+    var lost_games = ((100 - winpct) * played) / 100;
+
+    var score = (g1 * -3) + (g2 * -2) + (g3 * -1) + (g4 * 0) + (g5 * 1) + (g6 * 2) + (lost_games * 3);
+
+    var total = Math.round(score*18 * 100/ played) / 100;
+
+
+    var str = "Your score is " + total;
+    if(total < -4) {
+      str += ". Outstanding!";
+    } else if (total < 0) {
+      str += ". Very good!";
+    } else if (total < 4) {
+      str += ". Decent!";
+    } else {
+      str += ". Not bad!";
+    }
+    document.getElementById("result").textContent = str;
+
+    
+    console.log("done");
+    return false;
+  }
+</script>
+
+<form id="form" onsubmit="return calculate()">
+  <label for="g1">1 guess:</label>
+  <input type="number" id="g1" name="g1" required><br><br>
+  <label for="g2">2 guesses:</label>
+  <input type="number" id="g2" name="g2" required><br><br>
+  <label for="g3">3 guesses:</label>
+  <input type="number" id="g3" name="g3" required><br><br>
+  <label for="g4">4 guesses:</label>
+  <input type="number" id="g4" name="g4" required><br><br>
+  <label for="g5">5 guesses:</label>
+  <input type="number" id="g5" name="g5 required"><br><br>
+  <label for="g6">6 guesses:</label>
+  <input type="number" id="g6" name="g6" required><br><br>
+  <label for="played">Games played:</label>
+  <input type="number" id="played" name="played" required><br><br>
+  <label for="winpct">Win percentage:</label>
+  <input type="number" id="winpct" name="winpct" required><br><br>
+
+
+  <input type="submit" value="Submit">
+</form>
+<br>
+<br>
+<br>
+<div id="result">
+</div>
+
+
+</body>
+</html>
