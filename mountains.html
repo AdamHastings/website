@@ -25,9 +25,13 @@
     </div>
     <div>
        <h2>Mountains</h2>
-       <p style="text-align:justify">A goal of mine is to climb all of the most topographically prominent mountains in the contiguous United States. I'm using the cutoff point of 5000 feet or 1500 meters, which is the threshold for a mountain to be considered "Ultra" prominent. There are 57 ultra-promiment peaks in the contiguous United States; so far I've climbed 13. There is a huge range in difficulty: some are easy hikes while others require rock and ice climbing; some have roads to the top while others require 50+ miles of off-trail wilderness travel. You can read more about topographic prominence <u><a href="https://en.wikipedia.org/wiki/Topographic_prominence" target="_blank" rel="noopener noreferrer">here</a></u>, and read about why I'm not interested in state highpoints instead <u><a href="https://en.wikipedia.org/wiki/Panorama_Point" target="_blank" rel="noopener noreferrer">here</a></u> and <u><a href="https://pubmed.ncbi.nlm.nih.gov/18331224/" target="_blank" rel="noopener noreferrer">here</a></u>.
-        <br>
-        <br>
+       <p style="text-align:justify">When I'm not doing research, I'm probably daydreaming about climbing mountains. 
+        
+        <!-- I can't really explain why I'm drawn to mountain climbing<code>&#8212;</code>maybe because it's emblematic of the Sisyphean struggle? Maybe because it's just nice to be in nature?  -->
+        I'm particularly interested in mountains peaks with a high degree of <u><a href="https://en.wikipedia.org/wiki/Topographic_prominence" target="_blank" rel="noopener noreferrer">prominence</a></u>, which is a quantitative measure a peak's independence or topographic significance.
+        There are 57 mountain peaks in the continguous US that are considered "ultra" prominent (meaning 5000+ ft. of prominence); I'm slowly working on trying to climb all of them. I have attempted 16 and have successfully summited 14. 
+      </p>
+      <p>
         Hover over the peaks below to learn more.
        </p>
 
@@ -52,7 +56,7 @@
 			</svg>
       <!--Baldy-->
       <svg style="left: calc((136px * 0.677) - 10px); top: calc((420px * 0.677) -  8.89px);" class="peak" viewBox="0 0 300 270">
-				<polygon points="20,235 150,20 280,235" class="green" onmouseenter="showTooltip(evt, 'Mount San Antonio\n(Mount Baldy)');" onmouseout="hideTooltip();"/>
+				<polygon points="20,235 150,20 280,235" class="green" onmouseenter="showTooltip(evt, 'Mount San Antonio (Mount Baldy)');" onmouseout="hideTooltip();"/>
       </svg>
       <!--San Gorgonio-->
       <svg style="left: calc((154px * 0.677) - 10px); top: calc((423px * 0.677) -  8.89px);" class="peak" viewBox="0 0 300 270">
@@ -72,7 +76,7 @@
       </svg>
       <!--Telescope-->
       <svg style="left: calc((160px * 0.677) - 10px); top: calc((378px * 0.677) -  8.89px);" class="peak" viewBox="0 0 300 270">
-				<polygon points="20,235 150,20 280,235" class="red" onmouseenter="showTooltip(evt, 'Telescope Peak');" onmouseout="hideTooltip();"/>
+				<polygon points="20,235 150,20 280,235" class="yellow" onmouseenter="showTooltip(evt, 'Telescope Peak');" onmouseout="hideTooltip();"/>
       </svg>      
 
       <!--UT-->
@@ -120,7 +124,7 @@
       </svg>
       <!--North Schell-->
       <svg style="left: calc((224px * 0.677) - 10px); top: calc((306px * 0.677) -  8.89px);" class="peak" viewBox="0 0 300 270">
-				<polygon points="20,235 150,20 280,235" class="red" onmouseenter="showTooltip(evt, 'North Schell Peak');" onmouseout="hideTooltip();"/>
+				<polygon points="20,235 150,20 280,235" class="green" onmouseenter="showTooltip(evt, 'North Schell Peak');" onmouseout="hideTooltip();"/>
       </svg>
       <!--Hayford-->
       <svg style="left: calc((200px * 0.677) - 10px); top: calc((373px * 0.677) -  8.89px);" class="peak" viewBox="0 0 300 270">
@@ -297,22 +301,22 @@
         <table class="tooltip-table" id="tooltip-table">
           <tbody>
             <tr>
-              <td>
+              <td  style="text-align: right; padding-right: 10px;">
                 Elevation:
               </td>
               <td class="amt" id=box-elevation>
               </td>
               </tr>
               <tr>
-                <td>
+                <td style="text-align: right; padding-right: 10px;">
                   Prominence:
                 </td>
                 <td class="amt" id=box-prominence>
                 </td>
               </tr>
               <tr>
-                <td>
-                  Mountain Range:
+                <td style="text-align: right; padding-right: 10px;">
+                  Range:
                 </td>
                 <td class="amt" id=box-range>
                 </td>
