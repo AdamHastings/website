@@ -1,59 +1,108 @@
-
 <head>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 
   <title> Adam Hastings, PhD Student, Computer Science </title>
+  <style>
+    /* Define the highlight class */
+    .highlight {
+      background-color: rgba(255, 255, 0, 0.7);
+      /* Change this to the desired highlight color and opacity */
+      animation: highlightEffect 1s ease-in-out;
+    }
+
+    /* Define the animation */
+    @keyframes highlightEffect {
+      0% {
+        background-color: rgba(255, 255, 0, 0.7);
+      }
+
+      50% {
+        background-color: rgba(255, 255, 0, 0.5);
+      }
+
+      100% {
+        background-color: rgba(255, 255, 0, 0);
+      }
+    }
+  </style>
+
+  <script>
+    // JavaScript to add and remove the highlight class
+    document.addEventListener('DOMContentLoaded', function () {
+      var links = document.querySelectorAll('a[href^="#"]');
+      console.log(links)
+      links.forEach(function (link) {
+        link.addEventListener('click', function (event) {
+          // event.preventDefault();
+          var targetId = link.getAttribute('href');
+          var targetElement = document.querySelector(targetId);
+          var targetText = targetElement.querySelector('span');
+          targetText.classList.add('highlight');
+          setTimeout(function () {
+            targetText.classList.remove('highlight');
+          }, 1000); // Remove highlight after 1 second
+        });
+      });
+    });
+  </script>
 </head>
 
 
 <body>
-  
+
   <section id=content>
     <div>
       <a href=".">
-      <h1>Adam<br>Hastings</h1>
+        <h1>Adam<br>Hastings</h1>
       </a>
     </div>
     <div>
-       <h2>Bio</h2>
+      <h2>Bio</h2>
       <table id=about-me class="table-class">
         <tr>
-        <td>
-            <img title="A photo of Adam Hastings" src=fulton_st.png
-            width=200px alt=photo_of_adam_hastings class="border-class">
-        </td>
-        <td>
-          <p>
-            I am a Ph.D. candidate at Columbia University in Department of Computer Science.
-            I work in the areas of systems and security and am advised by Simha Sethumadhavan. 
-          </p>
-          <p>
-            My Ph.D. has focused on methods and mechanisms to improve security from the ground-up.
-            I started my Ph.D. by trying to leverage in-line cache compression to accelerate system checkpointing to enable fast speculation recovery and provide space for security metadata. 
-            This led to some (unpublished) work on using encryption to defend against Rowhammer; 
-            the technique didn't pan out but it led me to an important conclusion:
-            It doesn't matter how many Rowhammer/memory safety/Spectre/etc. defenses researchers come up with if they never get built in real-world products! 
-          </p>  
-          <p>  
-            Since then, my research has grappled with this question: 
-            What can technologists do to improve security when the roadblocks to security are largely economic ones, and not solely technical ones? 
-            This has been a multi-pronged approach: 
-            I first needed to understand the tradeoffs invovled when architects forgo performance in exchange for security.
-            This led me to conduct user studies that quantify how much users value device performance in terms of US dollars. 
-            Later, I delved into how regulation might kickstart security adoption in hardware and systems. 
-            This is a very challenging problem filled with many perverse incentives and must be done very carefully;
-            we propose applying a "security tax" on systems and letting product vendors themselves figure out how to allocate system resources for security (rather than rely on regulators to make these highly technical and nuanced decisions). 
-            As part of this work, I created a neat neural network regression technique to leverage hardware performance counters (HPCs) to measure how many execution cycles a system is spending on security <i>in real time</i>.
-            I also took an extended industry internship detour and focused for a while on embedded systems security, authentication, and applied cryptography.
-            Finally, I am currently working on modeling and understanding cyberinsurance as a mechanism to improve security adoption. 
-          </p>
-          <p>
-            I am currently on the job market! Please reach out if you'd like to chat. 
-          </p>
-          <p>
-            Email: &ltmy last name&gt@cs.columbia.edu
-          </p>
+          <td>
+            <img title="A photo of Adam Hastings" src=fulton_st.png width=200px alt=photo_of_adam_hastings
+              class="border-class">
+          </td>
+          <td>
+            <p>
+              I am a Ph.D. candidate at Columbia University in Department of Computer Science.
+              I work in the areas of systems and security and am advised by Simha Sethumadhavan.
+            </p>
+            <p>
+              My Ph.D. has focused on methods and mechanisms to improve security from the ground-up.
+              I started my Ph.D. by trying to leverage <a href="#checkpointing" class="link-class">in-line cache compression to accelerate
+                system checkpointing</a> to
+                enable fast speculation recovery and provide on-chip space for security metadata.
+              This led to some (unpublished) work on using encryption to defend against Rowhammer;
+              the technique didn't pan out but it led me to an important conclusion:
+              it doesn't matter how many Rowhammer / memory safety / Spectre / etc. defenses researchers design if they
+              never get built in real-world products!
+            </p>
+            <p>
+              Since then, my research has grappled with this question:
+              <a href="#doctrine" class="link-class">
+              What can technologists do to improve security when the roadblocks are not just technical ones, but also economic ones</a>?
+              This has been a multi-pronged approach:
+              I first needed to understand the tradeoffs invovled when systems architects forgo performance in exchange for
+              security, so I conducted <a href="#wta" class="link-class">studies that quantify how much users value performance</a> in
+                terms of US dollars.
+              Later, I delved into how regulation might kickstart security adoption in hardware and systems.
+              This is a very challenging problem filled with many perverse incentives;
+              <a href="#mandates" class="link-class">we propose applying a "security tax" on systems</a> and letting product vendors 
+                figure out how to allocate system resources for security themselves.
+              I also took an extended industry internship detour and focused for a while on embedded systems security,
+              authentication, and applied cryptography.
+              Finally, I am currently working on modeling and understanding cyberinsurance as a mechanism to improve
+              security adoption.
+            </p>
+            <p>
+              I am currently on the job market! Please reach out if you'd like to chat.
+            </p>
+            <p>
+              Email: &ltmy last name&gt@cs.columbia.edu
+            </p>
           </td>
         </tr>
 
@@ -61,49 +110,91 @@
     </div>
 
     <div class=resume-format>
-        <h2>
-            Education
-        </h2>
-          <div>
-            <p><b>Ph.D., Computer Science</b> <i>2018 &#8211 present</i>  (in progress)<br>Columbia University</p>
-          </div>
-          <div>
-            <p><b>M.Sc., Electrical & Computer Engineering</b> <i>2016 &#8211 2018</i><br>Brigham Young University</p>
-          </div>
-          <div>
-            <p><b>B.Sc., Computer Engineering</b> <i>2012 &#8211 2016</i> <br>Brigham Young University</p>
-          </div>
+      <h2>
+        Education
+      </h2>
+      <div>
+        <p><b>Ph.D., Computer Science</b> <i>2018 &#8211 present</i> (in progress)<br>Columbia University</p>
+      </div>
+      <div>
+        <p><b>M.Sc., Electrical & Computer Engineering</b> <i>2016 &#8211 2018</i><br>Brigham Young University</p>
+      </div>
+      <div>
+        <p><b>B.Sc., Computer Engineering</b> <i>2012 &#8211 2016</i> <br>Brigham Young University</p>
+      </div>
     </div>
 
     <div class=resume-format>
 
       <h2 id=Publications>
-          Publications
+        Publications
       </h2>
-        <div>
-          <p><i><a href="http://arxiv.org/abs/2203.05015" target="_blank" rel="noopener noreferrer">COMMAND: Certifiable Open Measurable Mandates</a></i> (preprint)</p>
-        </div>
-        <div>
-          <p><i><a href="wta.pdf" target="_blank" rel="noopener noreferrer">How Much is Performance Worth to Users?</a></i> Computing Frontiers '23</p>
-        </div>
-        <div>
-          <p><i><a href="https://ieeexplore.ieee.org/abstract/document/9923862" target="_blank" rel="noopener noreferrer">Revisiting Residue Codes for Modern Memories</a></i> MICRO '22</p>
-        </div>
-        <div>
-          <p><i><a href="doctrine.pdf" target="_blank" rel="noopener noreferrer">A New Doctrine for Hardware Security</a></i> in ASHES 2020</p>
-        </div>
-        <div>
-          <p><i><a href="https://www.sigarch.org/are-computer-architects-to-blame-for-the-state-of-security-today/" target="_blank" rel="noopener noreferrer">Are Computer Architects to Blame for the State of Security Today?</a></i> 2019</p>
-        </div>
-        <div>
-          <p><i><a href="checkpointing.pdf" target="_blank" rel="noopener noreferrer">Checkpointing at System Calls using BDI Compression</a></i> Technical report, 2019</p>
-        </div>
-        <div>
-          <p><i><a href="https://scholarsarchive.byu.edu/etd/7035/" target="_blank" rel="noopener noreferrer">Assuring Intellectual Property Through Physical and Functional Comparisons</a></i> Master's thesis, 2018</p>
-        </div>
-        <div>
-          <p><i><a href="3pip.pdf" target="_blank" rel="noopener noreferrer">Using Physical and Functional Comparisons to Assure 3rd-Party IP for Modern FPGAs</a></i> in IVSW 2018</p>
-        </div>
+      <div>
+        <p id="mandates">
+          <span>
+            <a href="http://arxiv.org/abs/2203.05015" target="_blank" rel="noopener noreferrer" class="link-class">
+              <i>COMMAND: Certifiable Open Measurable Mandates</a></i>, (pre-print)
+            <br>
+            <b>A. Hastings</b>, R. Piersma, S. Sethumadhavan
+          </span>
+        </p>
+      </div>
+      <div>
+        <p id="wta">
+          <span>
+            <i><a href="wta.pdf" target="_blank" rel="noopener noreferrer" class="link-class">
+              How Much is Performance Worth to Users?</a></i>, CF 2023 (<a href="https://www.youtube.com/watch?v=0Hdh3y9GPTQ"  target="_blank" rel="noopener noreferrer" class="link-class">video</a>)
+            <br>
+            <b>A. Hastings</b>, L. Chilton, S. Sethumadhavan
+          </span>
+        </p>
+      </div>
+      <div>
+        <p><span><i><a href="https://ieeexplore.ieee.org/abstract/document/9923862" target="_blank"
+                rel="noopener noreferrer" class="link-class">
+                Revisiting Residue Codes for Modern Memories</a></i>, MICRO 2022
+            <br>
+            E. Manzhosov, <b>A. Hastings</b>, M. Pancholi, R. Piersma, M. Tarek Ibn Ziad, S. Sethumadhavan
+          </span></p>
+      </div>
+      <div>
+        <p id="doctrine"><span><i><a href="doctrine.pdf" target="_blank" rel="noopener noreferrer" class="link-class">
+          A New Doctrine for Hardware Security</a></i>, ASHES 2020
+            <br>
+            <b>A. Hastings</b>, S. Sethumadhavan
+          </span></p>
+      </div>
+      <div>
+        <p><span><i><a href="https://www.sigarch.org/are-computer-architects-to-blame-for-the-state-of-security-today/" target="_blank" rel="noopener noreferrer" class="link-class">
+                Are Computer Architects to Blame for the State of Security Today?</a></i>, SIGARCH blog post, 2019
+            <br>
+            <b>A. Hastings</b>, S. Sethumadhavan
+          </span></p>
+      </div>
+      <div>
+        <p id="checkpointing">
+          <span>
+            <i><a href="checkpointing.pdf" target="_blank" rel="noopener noreferrer" class="link-class">
+              Checkpointing at System Calls using BDI Compression</a></i>, technical report, 2019
+            <br>
+            <b>A. Hastings</b>, H. Sasaki, M. Arroyo, K. Williams-King, V. Kemerlis, S. Sethumadhavan
+          </span>
+        </p>
+      </div>
+      <div>
+        <p><span><i><a href="https://scholarsarchive.byu.edu/etd/7035/" target="_blank" rel="noopener noreferrer" class="link-class">
+                Assuring Intellectual Property Through Physical and Functional Comparisons</a></i>, Master's thesis, 2018
+            <br>
+            <b>A. Hastings</b>
+          </span></p>
+      </div>
+      <div>
+        <p><span><i><a href="3pip.pdf" target="_blank" rel="noopener noreferrer" class="link-class">
+            Using Physical and Functional Comparisons to Assure 3rd-Party IP for Modern FPGAs</a></i>, IVSW 2018
+            <br>
+            <b>A. Hastings</b>, S. Jensen, J. Goeders, B. Hutchings
+          </span></p>
+      </div>
     </div>
     <h2></h2>
     <!-- Was that not exciting enough for you? -->
