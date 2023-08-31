@@ -71,7 +71,7 @@
               I work in the areas of systems and security and am advised by <a href="https://www.cs.columbia.edu/~simha/" class="link-class" target="_blank" rel="noopener noreferrer">Simha Sethumadhavan</a>.
             </p>
             <p>
-              My Ph.D. has focused on methods and mechanisms to improve security from the ground-up.
+              My Ph.D. has focused on methods and mechanisms to improve security from the ground-up through secure systems and hardware.
               I started my Ph.D. trying to leverage <a href="#checkpointing" class="link-class">in-line cache compression to accelerate
                   system checkpointing</a>.
               This led to (unpublished) work on an encryption-based Rowhammer defense;
@@ -85,8 +85,9 @@
               What can technologists do to improve security when the roadblocks are not just technical ones</a>?
               This has been a multi-pronged approach:
               I first needed to understand the tradeoffs between performance and security,
-              so I conducted <a href="#wta" class="link-class">studies that quantified how much users value performance</a>.
-              Later, I delved into how regulation might kickstart security adoption in hardware and systems.
+              so I conducted <a href="#wta" class="link-class">experiments that measure how much users value performance</a>.
+              To do this, I developed software that had study participants decide between money and performance with real-world consequences. 
+              Later, I delved into how regulation might kickstart security adoption in systems.
               <a href="#mandates" class="link-class">Our proposal asks systems to spend a fraction of execution cycles on security</a> 
               but lets product vendors themselves figure out how this budget should be spent. 
               To make such a proposal enforceable, I trained a neural network that estimates real-time security overhead based on on-chip hardware events (i.e. HPC data).
@@ -128,22 +129,32 @@
         Publications
       </h2>
       <div>
-        <p id="mandates">
+        <p id="wta">
           <span>
-            <a href="http://arxiv.org/abs/2203.05015" target="_blank" rel="noopener noreferrer" class="link-class">
-              <i>COMMAND: Certifiable Open Measurable Mandates</a></i>, (pre-print)
+            <i><a href="wta.pdf" target="_blank" rel="noopener noreferrer" class="link-class">
+              How Much is Performance Worth to Users?</a></i>, Computing Frontiers 2023 (<a href="https://www.youtube.com/watch?v=0Hdh3y9GPTQ"  target="_blank" rel="noopener noreferrer" class="link-class">video</a>)
             <br>
-            <b>A. Hastings</b>, R. Piersma, S. Sethumadhavan
+            <b>A. Hastings</b>, L. Chilton, S. Sethumadhavan
           </span>
         </p>
       </div>
       <div>
         <p id="wta">
           <span>
-            <i><a href="wta.pdf" target="_blank" rel="noopener noreferrer" class="link-class">
-              How Much is Performance Worth to Users?</a></i>, CF 2023 (<a href="https://www.youtube.com/watch?v=0Hdh3y9GPTQ"  target="_blank" rel="noopener noreferrer" class="link-class">video</a>)
+            <i><a href="https://cra.org/ccc/events/mechanism-design-for-improving-hardware-security/" target="_blank" rel="noopener noreferrer" class="link-class">
+              Mechanism Design for Improving Hardware Security</a></i>, CCC Workshop Report, 2022
             <br>
-            <b>A. Hastings</b>, L. Chilton, S. Sethumadhavan
+            S. Sethumadhavan, T. Sherwood, <b>A. Hastings</b>
+          </span>
+        </p>
+      </div>
+      <div>
+        <p id="mandates">
+          <span>
+            <a href="http://arxiv.org/abs/2203.05015" target="_blank" rel="noopener noreferrer" class="link-class">
+              <i>COMMAND: Certifiable Open Measurable Mandates</a></i>, pre-print, 2022
+            <br>
+            <b>A. Hastings</b>, R. Piersma, S. Sethumadhavan
           </span>
         </p>
       </div>
@@ -173,7 +184,7 @@
         <p id="checkpointing">
           <span>
             <i><a href="checkpointing.pdf" target="_blank" rel="noopener noreferrer" class="link-class">
-              Checkpointing at System Calls using BDI Compression</a></i>, technical report, 2019
+              Checkpointing at System Calls using BDI Compression</a></i>, Technical report, 2019
             <br>
             <b>A. Hastings</b>, H. Sasaki, M. Arroyo, K. Williams-King, V. Kemerlis, S. Sethumadhavan
           </span>
