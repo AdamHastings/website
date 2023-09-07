@@ -18,7 +18,7 @@ function showTooltip(evt, text) {
   name.style.padding = "10px";
 
 
-  if (text == "Mount Washington") {
+  if (text == "Mount Washington" || text == "Mount Marcy") {
     tooltip.style.left = evt.pageX - map.offsetLeft - 450 + 'px';
     tooltip.style.top = evt.pageY - map.offsetTop - 60 + 'px';
   } else if (text == "Mount Mitchell") {
