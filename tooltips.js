@@ -71,6 +71,23 @@ function showTooltip(evt, text) {
       cell2.innerHTML = peak.description;
       // cell2.style.textAlign = "justify";
     }
+
+    let descrow2 = mytable.insertRow(-1);
+
+    {
+      // Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
+      let cell1 = descrow2.insertCell(0);
+      let cell2 = descrow2.insertCell(1);
+
+      // Add some text to the new cells:
+      cell1.innerHTML = "";
+      cell1.style.textAlign = "right";
+      cell1.style.verticalAlign = "top";
+      cell1.style.paddingRight = "10px";
+      cell2.innerHTML = peak.descriptiondetailed;
+      cell2.style.fontSize = "x-small";
+      // cell2.style.textAlign = "justify";
+    }
   }
 
   tooltip.style.display = "block";
@@ -78,8 +95,14 @@ function showTooltip(evt, text) {
 
 function hideTooltip() {
   let mytable = document.getElementById("tooltip-table");
+  
+  // Delete route and note
   if (mytable.rows.length > 3) {
     mytable.deleteRow(-1);
+    mytable.deleteRow(-1);
+  }
+  // Delete detailed description (Mount Marcy) if applicable
+  if (mytable.rows.length > 3) {
     mytable.deleteRow(-1);
   }
 
