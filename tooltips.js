@@ -95,16 +95,12 @@ function showTooltip(evt, text) {
 
 function hideTooltip() {
   let mytable = document.getElementById("tooltip-table");
+
+  // trim off any added extra rows
+  while (mytable.rows.length > 3) {
+    mytable.deleteRow(-1);
+  }
   
-  // Delete route and note
-  if (mytable.rows.length > 3) {
-    mytable.deleteRow(-1);
-    mytable.deleteRow(-1);
-  }
-  // Delete detailed description (Mount Marcy) if applicable
-  if (mytable.rows.length > 3) {
-    mytable.deleteRow(-1);
-  }
 
   var tooltip = document.getElementById("tooltip");
   tooltip.style.display = "none";
