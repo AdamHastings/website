@@ -24,9 +24,23 @@
     fill: red;
   }
 
+  .redhp{
+    stroke:blue;
+    stroke-width: 30;
+    pointer-events: fill;
+    fill: red;
+  }
+
   .yellow{
     stroke:black;
     stroke-width: 20;
+    pointer-events: fill;
+    fill: yellow;
+  }
+
+  .yellowhp{
+    stroke:blue;
+    stroke-width: 30;
     pointer-events: fill;
     fill: yellow;
   }
@@ -34,6 +48,13 @@
   .green{
     stroke:black;
     stroke-width: 20;
+    pointer-events: fill;
+    fill: green;
+  }
+
+  .greenhp{
+    stroke:blue;
+    stroke-width: 30;
     pointer-events: fill;
     fill: green;
   }

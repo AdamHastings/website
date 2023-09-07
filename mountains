@@ -72,7 +72,7 @@
 			</svg>
       <!--Whitney-->
       <svg style="left: calc((138px * 0.677) - 10px); top: calc((342px * 0.677) -  8.89px);" class="peak" viewBox="0 0 300 270">
-				<polygon points="20,235 150,20 280,235" class="green" onmouseenter="showTooltip(evt, 'Mount Whitney');" onmouseout="hideTooltip();"/>
+				<polygon points="20,235 150,20 280,235" class="greenhp" onmouseenter="showTooltip(evt, 'Mount Whitney');" onmouseout="hideTooltip();"/>
       </svg>
       <!--Telescope-->
       <svg style="left: calc((160px * 0.677) - 10px); top: calc((378px * 0.677) -  8.89px);" class="peak" viewBox="0 0 300 270">
@@ -82,7 +82,7 @@
       <!--UT-->
       <!--Kings-->
       <svg style="left: calc((315px * 0.677) - 10px); top: calc((288px * 0.677) -  8.89px);" class="peak" viewBox="0 0 300 270">
-        <polygon points="20,235 150,20 280,235" class="red" onmouseenter="showTooltip(evt, 'Kings Peak');" onmouseout="hideTooltip();"/>
+        <polygon points="20,235 150,20 280,235" class="redhp" onmouseenter="showTooltip(evt, 'Kings Peak');" onmouseout="hideTooltip();"/>
       </svg>
       <!--Deseret-->
       <svg style="left: calc((270px * 0.677) - 10px); top: calc((285px * 0.677) -  8.89px);" class="peak" viewBox="0 0 300 270">
@@ -150,7 +150,7 @@
       <!--CO-->
       <!--Elbert-->
       <svg style="left: calc((385px * 0.677) - 10px); top: calc((342px * 0.677) -  8.89px);" class="peak" viewBox="0 0 300 270">
-        <polygon points="20,235 150,20 280,235" class="green" onmouseenter="showTooltip(evt, 'Mount Elbert');" onmouseout="hideTooltip();"/>
+        <polygon points="20,235 150,20 280,235" class="greenhp" onmouseenter="showTooltip(evt, 'Mount Elbert');" onmouseout="hideTooltip();"/>
       </svg>
       <!--Blanca-->
       <svg style="left: calc((400px * 0.677) - 10px); top: calc((380px * 0.677) -  8.89px);" class="peak" viewBox="0 0 300 270">
@@ -164,7 +164,7 @@
       <!--AZ-->
       <!--Humphreys-->
       <svg style="left: calc((267px * 0.677) - 10px); top: calc((420px * 0.677) -  8.89px);" class="peak" viewBox="0 0 300 270">
-        <polygon points="20,235 150,20 280,235" class="red" onmouseenter="showTooltip(evt, 'Humphreys Peak');" onmouseout="hideTooltip();"/>
+        <polygon points="20,235 150,20 280,235" class="redhp" onmouseenter="showTooltip(evt, 'Humphreys Peak');" onmouseout="hideTooltip();"/>
       </svg>
       <!--Graham-->
       <svg style="left: calc((293px * 0.677) - 10px); top: calc((491px * 0.677) -  8.89px);" class="peak" viewBox="0 0 300 270">
@@ -202,7 +202,7 @@
       </svg>
       <!--Rainier-->
       <svg style="left: calc((139px * 0.677) - 10px); top: calc((90px * 0.677) -  8.89px);" class="peak" viewBox="0 0 300 270">
-        <polygon points="20,235 150,20 280,235" class="red" onmouseenter="showTooltip(evt, 'Mount Rainier');" onmouseout="hideTooltip();"/>
+        <polygon points="20,235 150,20 280,235" class="redhp" onmouseenter="showTooltip(evt, 'Mount Rainier');" onmouseout="hideTooltip();"/>
       </svg>
       <!--Adams-->
       <svg style="left: calc((141px * 0.677) - 10px); top: calc((107px * 0.677) -  8.89px);" class="peak" viewBox="0 0 300 270">
@@ -216,13 +216,13 @@
       <!--NH-->
       <!--Washington-->
       <svg style="left: calc((1040px * 0.677) - 10px); top: calc((160px * 0.677) -  8.89px);" class="peak" viewBox="0 0 300 270">
-				<polygon points="20,235 150,20 280,235" class="green" onmouseenter="showTooltip(evt, 'Mount Washington');" onmouseout="hideTooltip();"/>
+				<polygon points="20,235 150,20 280,235" class="greenhp" onmouseenter="showTooltip(evt, 'Mount Washington');" onmouseout="hideTooltip();"/>
       </svg>
       
       <!--NC-->
       <!--Mitchell-->
       <svg style="left: calc((875px * 0.677) - 10px); top: calc((411px * 0.677) -  8.89px);" class="peak" viewBox="0 0 300 270">
-				<polygon points="20,235 150,20 280,235" class="red" onmouseenter="showTooltip(evt, 'Mount Mitchell');" onmouseout="hideTooltip();"/>
+				<polygon points="20,235 150,20 280,235" class="redhp" onmouseenter="showTooltip(evt, 'Mount Mitchell');" onmouseout="hideTooltip();"/>
       </svg>
       
       <!--NM-->
@@ -234,7 +234,7 @@
       <!--OR-->
       <!--Hood-->
       <svg style="left: calc((130px * 0.677) - 10px); top: calc((127px * 0.677) -  8.89px);" class="peak" viewBox="0 0 300 270">
-				<polygon points="20,235 150,20 280,235" class="red" onmouseenter="showTooltip(evt, 'Mount Hood');" onmouseout="hideTooltip();"/>
+				<polygon points="20,235 150,20 280,235" class="redhp" onmouseenter="showTooltip(evt, 'Mount Hood');" onmouseout="hideTooltip();"/>
       </svg>
       <!--Jefferson, OR-->
       <svg style="left: calc((125px * 0.677) - 10px); top: calc((145px * 0.677) -  8.89px);" class="peak" viewBox="0 0 300 270">
@@ -250,13 +250,13 @@
       </svg>
       
       <!--ID-->
-      <!--Borah-->
-      <svg style="left: calc((266px * 0.677) - 10px); top: calc((191px * 0.677) -  8.89px);" class="peak" viewBox="0 0 300 270">
-				<polygon points="20,235 150,20 280,235" class="red" onmouseenter="showTooltip(evt, 'Borah Peak');" onmouseout="hideTooltip();"/>
-      </svg>
       <!--Diamond-->
       <svg style="left: calc((276px * 0.677) - 10px); top: calc((191px * 0.677) -  8.89px);" class="peak" viewBox="0 0 300 270">
         <polygon points="20,235 150,20 280,235" class="red" onmouseenter="showTooltip(evt, 'Diamond Peak');" onmouseout="hideTooltip();"/>
+      </svg>
+      <!--Borah-->
+      <svg style="left: calc((266px * 0.677) - 10px); top: calc((191px * 0.677) -  8.89px);" class="peak" viewBox="0 0 300 270">
+				<polygon points="20,235 150,20 280,235" class="redhp" onmouseenter="showTooltip(evt, 'Borah Peak');" onmouseout="hideTooltip();"/>
       </svg>
       <!--She Devil-->
       <svg style="left: calc((221px * 0.677) - 10px); top: calc((148px * 0.677) -  8.89px);" class="peak" viewBox="0 0 300 270">
@@ -270,7 +270,7 @@
       </svg>
       <!--Gannett-->
       <svg style="left: calc((336px * 0.677) - 10px); top: calc((227px * 0.677) -  8.89px);" class="peak" viewBox="0 0 300 270">
-        <polygon points="20,235 150,20 280,235" class="red" onmouseenter="showTooltip(evt, 'Gannett Peak');" onmouseout="hideTooltip();"/>
+        <polygon points="20,235 150,20 280,235" class="redhp" onmouseenter="showTooltip(evt, 'Gannett Peak');" onmouseout="hideTooltip();"/>
       </svg>
       <!--Grand Teton-->
       <svg style="left: calc((315px * 0.677) - 10px); top: calc((210px * 0.677) -  8.89px);" class="peak" viewBox="0 0 300 270">
@@ -298,7 +298,7 @@
       <!--NY-->
       <!--Marcy-->
       <svg style="left: calc((990px * 0.677) - 10px); top: calc((170px * 0.677) -  8.89px);" class="peak" viewBox="0 0 300 270">
-				<polygon points="20,235 150,20 280,235" class="green" onmouseenter="showTooltip(evt, 'Mount Marcy');" onmouseout="hideTooltip();"/>
+				<polygon points="20,235 150,20 280,235" class="greenhp" onmouseenter="showTooltip(evt, 'Mount Marcy');" onmouseout="hideTooltip();"/>
       </svg>
       </div>
 
@@ -333,17 +333,18 @@
       
     </div>
 
-    <div style="display: block; margin-left: auto; margin-right: auto; user-drag: none; user-select: none;">
-        <p >
-            <i><img src="grn.svg" width=20/> = climbed</i>
+    <div style="display: block; margin: auto; user-drag: none; user-select: none;">
+        <p style="text-align: center">
+            <i><img src="grn.svg" width=20/> climbed</i>
             &nbsp
             &nbsp
-            &nbsp
-            <i><img src="ylw.svg" width=20/> = attempted</i>
-            &nbsp
+            <i><img src="ylw.svg" width=20/> attempted</i>
             &nbsp
             &nbsp
-            <i><img src="red.svg" width=20/> = unclimbed</i>
+            <i><img src="red.svg" width=20/> unclimbed</i>
+            &nbsp
+            &nbsp
+            <i><img src="clr.svg" width=20/> state highpoint</i>
         </p>
     </div>
     <h2></h2>
