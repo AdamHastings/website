@@ -294,6 +294,12 @@
       <svg style="left: calc((284px * 0.677) - 10px); top: calc((72px * 0.677) -  8.89px);" class="peak" viewBox="0 0 300 270">
 				<polygon points="20,235 150,20 280,235" class="red" onmouseenter="showTooltip(evt, 'Mount Cleveland');" onmouseout="hideTooltip();"/>
       </svg>
+
+      <!--NY-->
+      <!--Marcy-->
+      <svg style="left: calc((990px * 0.677) - 10px); top: calc((170px * 0.677) -  8.89px);" class="peak" viewBox="0 0 300 270">
+				<polygon points="20,235 150,20 280,235" class="green" onmouseenter="showTooltip(evt, 'Mount Marcy');" onmouseout="hideTooltip();"/>
+      </svg>
       </div>
 
       <div id="tooltip" display="none" style="position: absolute; display: none; user-drag: none; user-select: none;">
