@@ -67,10 +67,44 @@
           </td>
           <td>
             <p>
-              I am a Ph.D. candidate at Columbia University in the Department of Computer Science.
-              I work in the areas of systems and security and am advised by <a href="https://www.cs.columbia.edu/~simha/" class="link-class" target="_blank" rel="noopener noreferrer">Simha Sethumadhavan</a>.
+              I am a Ph.D. candidate in the Department of Computer Science at Columbia University, and am advised by <a
+                href="https://www.cs.columbia.edu/~simha/" class="link-class" target="_blank"
+                rel="noopener noreferrer">Simha Sethumadhavan</a>.
+              My research is focused on taking a technology-first approach towards identifying, measuring, and
+              distributing the costs of computer security. I use a big-picture definition of "costs" but am particularly
+              interested in the systems-level tradeoffs between security and performance.
             </p>
             <p>
+              Some of the work I've done towards this end:
+            </p>
+            <p><b>Can we utilize computer architecture and systems design to lower the performance costs of security
+                operations?</b>
+              I designed <a href="#checkpointing" class="link-class">novel L1/L2 cache protocols</a> to leverage in-line
+              cache compression for reducing program checkpoint + recovery times. I also leveraged system checkpointing
+              for crafting dynamic runtime security seccomp filters on Linux systems.</p>
+
+            <p><b>Why are the same few vulnerabilities (like buffer overflows) exploited year-after-year when we have
+                the technical means to solve them?</b> I have been advocating for viewing security as sociotechnical
+              problem to illustrate why technical security failures persist, and <a href="#doctrine"
+                class="link-class">developed a framework for identifying where and how to distribute the "shared burden"
+                of security</a>.</p>
+
+            <p><b>What is the opportunity cost of exchanging performance for security?</b> I built <a href="#wta"
+                class="link-class">desktop and web apps that experimentally quantify the dollar amount that users place
+                on device performance</a>.</p>
+
+            <p><b>How can we make security cheap and available for everyone?</b> I researched auth protocols (FIDO2/U2F)
+              to determine the feasibility of building open source hardware authenticator devices.</p>
+
+            <p><b>Can we leverage computer architecture and systems design to avoid "security theater" regulations?</b>
+              I demonstrated the feasibility of <a href="#mandates" class="link-class">using neural networks to estimate
+                the in situ performance overhead of security</a>. Using this primitive, I designed a regulatory system
+              that provisions a system-level security "budget" and incentivizes the efficient use of security resources
+              (like CPU cycles or power).</p>
+
+            <p><b>What techniques from economics research can we use to study the costs of security?</b> I'm currently
+              using game theory and simulation methods to understand the tradeoffs of security investments.</p>
+            <!-- <p>
               My Ph.D. has focused on methods and mechanisms to improve security from the ground-up through secure systems and hardware.
               I started my Ph.D. trying to leverage <a href="#checkpointing" class="link-class">in-line cache compression to accelerate
                   system checkpointing</a>.
@@ -78,8 +112,8 @@
               the technique didn't pan out but it led to an important conclusion:
               it doesn't matter how many defenses researchers design if they
               never get built in real products!
-            </p>
-            <p>
+            </p> -->
+            <!-- <p>
               Since then, my research has grappled with this question:
               <a href="#doctrine" class="link-class">
               What can technologists do to improve security when the roadblocks are not just technical ones</a>?
@@ -95,9 +129,10 @@
               authentication, and applied cryptography.
               I am currently working on modeling cyberinsurance as a mechanism to improve
               security adoption.
-            </p>
+            </p> -->
             <p>
-              I am currently on the job market! Please see my resume <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="link-class">here</a> and reach out if you'd like to chat.
+              I am currently on the job market! Please see my resume <a href="resume.pdf" target="_blank"
+                rel="noopener noreferrer" class="link-class">here</a> and reach out if you'd like to chat.
             </p>
             <p>
               Email: &ltmy last name&gt@cs.columbia.edu
@@ -140,88 +175,95 @@
         </p>
       </div>
       <div>
-      <div>
-        <p id="mandates">
-          <span>
-            <a href="fairshare_short.pdf" target="_blank" rel="noopener noreferrer" class="link-class">
-              <i>Architectural Security Regulation</a></i>, IEEE Computer Architecture Letters, Vol. 22 Issue 2, 2023
-            <br>
-            <b>A. Hastings</b>, R. Piersma, S. Sethumadhavan
-          </span>
-        </p>
+        <div>
+          <p id="mandates">
+            <span>
+              <a href="fairshare_short.pdf" target="_blank" rel="noopener noreferrer" class="link-class">
+                <i>Architectural Security Regulation</a></i>, IEEE Computer Architecture Letters, Vol. 22 Issue 2, 2023
+              <br>
+              <b>A. Hastings</b>, R. Piersma, S. Sethumadhavan
+            </span>
+          </p>
+        </div>
+        <div>
+          <p id="wta">
+            <span>
+              <i><a href="wta.pdf" target="_blank" rel="noopener noreferrer" class="link-class">
+                  How Much is Performance Worth to Users?</a></i>, Computing Frontiers 2023 (<a
+                href="https://www.youtube.com/watch?v=0Hdh3y9GPTQ" target="_blank" rel="noopener noreferrer"
+                class="link-class">video</a>)
+              <br>
+              <b>A. Hastings</b>, L. Chilton, S. Sethumadhavan
+            </span>
+          </p>
+        </div>
+        <div>
+          <p id="wta">
+            <span>
+              <i><a href="https://cra.org/ccc/events/mechanism-design-for-improving-hardware-security/" target="_blank"
+                  rel="noopener noreferrer" class="link-class">
+                  Mechanism Design for Improving Hardware Security</a></i>, CCC Workshop Report, 2022
+              <br>
+              S. Sethumadhavan, T. Sherwood, <b>A. Hastings</b>, et al.
+            </span>
+          </p>
+        </div>
+        <div>
+          <p><span><i><a href="https://ieeexplore.ieee.org/abstract/document/9923862" target="_blank"
+                  rel="noopener noreferrer" class="link-class">
+                  Revisiting Residue Codes for Modern Memories</a></i>, MICRO 2022
+              <br>
+              E. Manzhosov, <b>A. Hastings</b>, M. Pancholi, R. Piersma, M. Tarek Ibn Ziad, S. Sethumadhavan
+            </span></p>
+        </div>
+        <div>
+          <p id="doctrine"><span><i><a href="doctrine.pdf" target="_blank" rel="noopener noreferrer" class="link-class">
+                  A New Doctrine for Hardware Security</a></i>, ASHES 2020
+              <br>
+              <b>A. Hastings</b>, S. Sethumadhavan
+            </span></p>
+        </div>
+        <div>
+          <p><span><i><a
+                  href="https://www.sigarch.org/are-computer-architects-to-blame-for-the-state-of-security-today/"
+                  target="_blank" rel="noopener noreferrer" class="link-class">
+                  Are Computer Architects to Blame for the State of Security Today?</a></i>, SIGARCH blog post, 2019
+              <br>
+              <b>A. Hastings</b>, S. Sethumadhavan
+            </span></p>
+        </div>
+        <div>
+          <p id="checkpointing">
+            <span>
+              <i><a href="checkpointing.pdf" target="_blank" rel="noopener noreferrer" class="link-class">
+                  Checkpointing at System Calls using BDI Compression</a></i>, Technical report, 2019
+              <br>
+              <b>A. Hastings</b>, H. Sasaki, M. Arroyo, K. Williams-King, V. Kemerlis, S. Sethumadhavan
+            </span>
+          </p>
+        </div>
+        <div>
+          <p><span><i><a href="https://scholarsarchive.byu.edu/etd/7035/" target="_blank" rel="noopener noreferrer"
+                  class="link-class">
+                  Assuring Intellectual Property Through Physical and Functional Comparisons</a></i>, Master's thesis,
+              2018
+              <br>
+              <b>A. Hastings</b>
+            </span></p>
+        </div>
+        <div>
+          <p><span><i><a href="3pip.pdf" target="_blank" rel="noopener noreferrer" class="link-class">
+                  Using Physical and Functional Comparisons to Assure 3rd-Party IP for Modern FPGAs</a></i>, IVSW 2018
+              <br>
+              <b>A. Hastings</b>, S. Jensen, J. Goeders, B. Hutchings
+            </span></p>
+        </div>
       </div>
-      <div>
-        <p id="wta">
-          <span>
-            <i><a href="wta.pdf" target="_blank" rel="noopener noreferrer" class="link-class">
-              How Much is Performance Worth to Users?</a></i>, Computing Frontiers 2023 (<a href="https://www.youtube.com/watch?v=0Hdh3y9GPTQ"  target="_blank" rel="noopener noreferrer" class="link-class">video</a>)
-            <br>
-            <b>A. Hastings</b>, L. Chilton, S. Sethumadhavan
-          </span>
-        </p>
-      </div>
-      <div>
-        <p id="wta">
-          <span>
-            <i><a href="https://cra.org/ccc/events/mechanism-design-for-improving-hardware-security/" target="_blank" rel="noopener noreferrer" class="link-class">
-              Mechanism Design for Improving Hardware Security</a></i>, CCC Workshop Report, 2022
-            <br>
-            S. Sethumadhavan, T. Sherwood, <b>A. Hastings</b>, et al.
-          </span>
-        </p>
-      </div>
-      <div>
-        <p><span><i><a href="https://ieeexplore.ieee.org/abstract/document/9923862" target="_blank"
-                rel="noopener noreferrer" class="link-class">
-                Revisiting Residue Codes for Modern Memories</a></i>, MICRO 2022
-            <br>
-            E. Manzhosov, <b>A. Hastings</b>, M. Pancholi, R. Piersma, M. Tarek Ibn Ziad, S. Sethumadhavan
-          </span></p>
-      </div>
-      <div>
-        <p id="doctrine"><span><i><a href="doctrine.pdf" target="_blank" rel="noopener noreferrer" class="link-class">
-          A New Doctrine for Hardware Security</a></i>, ASHES 2020
-            <br>
-            <b>A. Hastings</b>, S. Sethumadhavan
-          </span></p>
-      </div>
-      <div>
-        <p><span><i><a href="https://www.sigarch.org/are-computer-architects-to-blame-for-the-state-of-security-today/" target="_blank" rel="noopener noreferrer" class="link-class">
-                Are Computer Architects to Blame for the State of Security Today?</a></i>, SIGARCH blog post, 2019
-            <br>
-            <b>A. Hastings</b>, S. Sethumadhavan
-          </span></p>
-      </div>
-      <div>
-        <p id="checkpointing">
-          <span>
-            <i><a href="checkpointing.pdf" target="_blank" rel="noopener noreferrer" class="link-class">
-              Checkpointing at System Calls using BDI Compression</a></i>, Technical report, 2019
-            <br>
-            <b>A. Hastings</b>, H. Sasaki, M. Arroyo, K. Williams-King, V. Kemerlis, S. Sethumadhavan
-          </span>
-        </p>
-      </div>
-      <div>
-        <p><span><i><a href="https://scholarsarchive.byu.edu/etd/7035/" target="_blank" rel="noopener noreferrer" class="link-class">
-                Assuring Intellectual Property Through Physical and Functional Comparisons</a></i>, Master's thesis, 2018
-            <br>
-            <b>A. Hastings</b>
-          </span></p>
-      </div>
-      <div>
-        <p><span><i><a href="3pip.pdf" target="_blank" rel="noopener noreferrer" class="link-class">
-            Using Physical and Functional Comparisons to Assure 3rd-Party IP for Modern FPGAs</a></i>, IVSW 2018
-            <br>
-            <b>A. Hastings</b>, S. Jensen, J. Goeders, B. Hutchings
-          </span></p>
-      </div>
-    </div>
-    <h2></h2>
-    <!-- Was that not exciting enough for you? -->
-    <p style="font-size: 10;">
-      Looking for something more...<a href=mountains>adventurous</a>?
-    </p>
+      <h2></h2>
+      <!-- Was that not exciting enough for you? -->
+      <p style="font-size: 10;">
+        Looking for something more...<a href=mountains>adventurous</a>?
+      </p>
   </section>
 </body>
 
