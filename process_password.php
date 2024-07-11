@@ -3,62 +3,34 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (isset($_POST['pwd'])) {
         $password = $_POST['pwd'];
 
-        if ($password === 'elephants') {
-            // Display the yellow box if the password is "elephants"
-            echo '<!DOCTYPE html>
-            <html lang="en">
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Password Form</title>
-                <style>
-                    .yellow-box {
-                        background-color: yellow;
-                        padding: 20px;
-                        margin-top: 20px;
-                        border: 1px solid black;
-                    }
-                </style>
-            </head>
-            <body>
-                <form action="process_password.php" method="POST">
+        if (strtolower($password) === 'mephistopheles') {
+            $response = array(
+                'success' => true,
+                'html' => '
+                    <!-- This is my way of saying hello, because I can\'t do it face to face... --> <br>
+                    <div>
                     <p>
-                        <label for="pwd">Password:</label>
-                        <input type="password" id="pwd" name="pwd" required>
-                        <input type="submit">
+                        Hey, you made it. Congrats on solving the two easy (too easy?) puzzles. 
                     </p>
-                </form>
-                <div class="yellow-box">Password is correct!</div>
-            </body>
-            </html>';
-        } else {
-            // Process and hash the password (not "elephants")
-            $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
+                    <p>
+                        I upload my monthly playlists to Spotify profile <a href="https://open.spotify.com/user/1267021586" target="_blank" rel="noopener noreferrer" class="link-class">here</a>.
+                        For the compressed version, here\'s a playlist of 100 songs I often have on repeat (one song per artist, sorted alphabetically). 
+                    </p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/68mmKV6b3gUiuLEU5r3hcb?utm_source=generator" width="100%" height="1000" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
-            // In a real application, you would store this in a database
-            echo '<!DOCTYPE html>
-            <html lang="en">
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Password Form</title>
-            </head>
-            <body>
-                <form action="process_password.php" method="POST">
-                    <p>
-                        <label for="pwd">Password:</label>
-                        <input type="password" id="pwd" name="pwd" required>
-                        <input type="submit">
-                    </p>
-                </form>
-                <div>Hashed Password: ' . htmlspecialchars($hashedPassword) . '</div>
-            </body>
-            </html>';
+                    </div>
+                '
+            );
+        } else {
+            $response = array('success' => false);
         }
     } else {
-        echo "Password is required.";
+        $response = array('success' => false, 'message' => 'Password is required.');
     }
 } else {
-    echo "Invalid request method.";
+    $response = array('success' => false, 'message' => 'Invalid request method.');
 }
-?></body>
+
+header('Content-Type: application/json');
+echo json_encode($response);
+?>
