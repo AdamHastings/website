@@ -74,6 +74,15 @@ p{
   text-align: justify;
 }
 
+.grid-container {
+  display: grid;
+  align-content: space-evenly;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  justify-items: center;
+}
+
+
 .img {
     display:block;
     width: 800;
@@ -137,12 +146,4 @@ ul.dashed > li {
 ul.dashed > li:before {
   content: "-";
   text-indent: -20px;
-}
-
-.grid-container {
-  display: grid;
-  align-content: space-evenly;
-  grid-template-columns: auto auto auto;
-  padding: 10px;
-  justify-items: center;
 }
