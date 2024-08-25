@@ -86,7 +86,7 @@ function showTooltip(evt, text) {
         cell1.style.verticalAlign = "top";
         cell1.style.paddingRight = "10px";
         cell2.innerHTML = peak.descriptiondetailed;
-        cell2.style.fontSize = "x-small";
+        cell2.style.fontSize = "xx-small";
         cell2.style.textAlign = "justify";
       }
     }

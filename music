@@ -77,20 +77,31 @@
         </a>
       </div>
       <div>
-        <h2>Music</h2>
+        <!-- <h2>Music</h2> -->
+        <h2></h2>
         <div style="text-align: justify">
         <p>
+            <!-- <br><br> -->
+            <!-- When I'm not doing research or climbing mountains, I'm usually listening to music.  -->
             <br><br>
-            When I'm not doing research or climbing mountains, I'm usually listening to music. 
-            <br><br>
-            For the past 10 years, I've been making monthly playlists of recent finds and repeat listens and sharing with friends. 
-            If you know me, you probably know where to find them. 
-            If you <i>don't</i> know where to find them but still want to listen, I'm happy to share<span>&#8212;</span>but you'll need to demonstrate genuine interest.
+            <!-- For the past 10 years, I've been making monthly playlists of music I've been listening to. -->
+            <!-- If you know me, you know where to find them.  -->
+            <!-- If you <i>don't</i> know where to find them,  -->
+            If you're looking for a cold open, let's talk music. 
+            Need a Starting Point?
+            Every month I make a playlist of recent finds and repeat listens 
+            
+
+            
+
+            However, I don't share them with strangers.
+            T
+            
       
         </p>
         <div id="container">
         <p >
-          Interested? Need Some Pointers? Examine Capitalizations Thoroughly<span>&#8212;</span>Hidden Treasures May Lie...
+          Interested? Need Some Pointers? Examine Capitalizations Thoroughly<span>&#8212;</span>Hidden Treasures May Lurk...
         </p>
         <form id="passwordForm" onsubmit="submitForm(event)">
             <p>
