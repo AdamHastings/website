@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
   
     <link rel="stylesheet" href="styles.css">
@@ -73,7 +76,7 @@
     <section id=content>
       <div>
         <!-- <a href="https://www.cs.columbia.edu/~hastings/"> -->
-        <a href="adam.hastings.phd">
+        <a href="/">
           <h1>Adam<br>Hastings</h1>
         </a>
       </div>
@@ -117,3 +120,4 @@
 
     </section>
 </body>
+</html>
