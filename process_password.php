@@ -3,7 +3,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (isset($_POST['pwd'])) {
         $password = $_POST['pwd'];
 
-        if (strtolower($password) === 'mephistopheles') {
+        // Don't look here, this is cheating 
+        if (strtolower($password) === 'mephistopheles') { // you know, I could have made this private if I wanted to 
             $response = array(
                 'success' => true,
                 'html' => '
