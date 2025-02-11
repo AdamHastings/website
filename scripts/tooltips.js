@@ -1,7 +1,7 @@
 
 var peaks = '';
 var request = new XMLHttpRequest();
-request.open('GET', 'peaks.json', true);
+request.open('GET', '/assets/data/peaks.json', true);
 request.onreadystatechange = function() {
   if (request.readyState === 4 && request.status === 200) {
     peaks = JSON.parse(request.responseText);
