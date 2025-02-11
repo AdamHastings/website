@@ -84,6 +84,7 @@ p{
 
 
 .img {
+    pointer-events: none;
     display:block;
     width: 800;
     margin: 300 auto 200 auto; 
