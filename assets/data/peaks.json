@@ -164,7 +164,7 @@
         "prominence": "7,196 ft (2193 m)",
         "isolation": "67.4 mi108.6 km",
         "coordinates": "37°38′03″N 118°15′21″W﻿ / ﻿37.6341°N 118.2557°W",
-        "route": "",
+        "route": "via Bancroft Station",
         "description": ""
     },
     "Cloud Peak" : {
@@ -273,7 +273,7 @@
         "isolation": "72.8 mi117.1 km",
         "coordinates": "38°26′19″N 109°13′45″W﻿ / ﻿38.4385°N 109.2292°W",
         "route": "La Sal Pass to northwest ridge",
-        "description": "I lost both of my big toenails"
+        "description": "I lost both my big toenails on this hike"
     },
     "Mount Washington" : {
         "rank": 59,
@@ -453,7 +453,7 @@
         "isolation": "75.6 mi121.6 km",
         "coordinates": "39°49′19″N 111°45′37″W﻿ / ﻿39.8219°N 111.7603°W",
         "route": "North ridge via North Peak trailhead",
-        "description": "Fun ridge scramble, but too hazy"
+        "description": "Fun ridge scramble."
     },
     "Snowshoe Peak" : {
         "rank": 92,
@@ -536,8 +536,8 @@
         "prominence": "5,354 ft (1632 m)",
         "isolation": "44.5 mi71.6 km",
         "coordinates": "47°28′30″N 120°54′09″W﻿ / ﻿47.4751°N 120.9024°W",
-        "route": "",
-        "description": ""
+        "route": "Cascadian Couloir",
+        "description": "Had to turn around due to a malfunctioning water filter."
     },
     "Blanca Peak" : {
         "rank": 103,
@@ -632,8 +632,8 @@
         "prominence": "5,178 ft (1578 m)",
         "isolation": "14.04 mi22.6 km",
         "coordinates": "48°55′42″N 117°27′36″W﻿ / ﻿48.9284°N 117.4600°W",
-        "route": "",
-        "description": ""
+        "route": "Flume Creek trail",
+        "description": "Northenmost of the group. One of the easiest too."
     },
     "Mount Lemmon" : {
         "rank": 118,
