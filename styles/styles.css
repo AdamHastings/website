@@ -249,13 +249,18 @@ ul.dashed > li:before {
   line-height: 1.5;
 }
 
+/* icon link hygiene (prevents tiny underline artifacts) */
+.icon-link,
 .icon-link:link,
 .icon-link:visited,
 .icon-link:hover,
 .icon-link:active,
 .icon-link:focus {
   color: inherit;
-  text-decoration: none;   /* kill underline on hover/focus */
+  text-decoration: none;
+  line-height: 0;
+  display: inline-flex;
+  align-items: center;
 }
 
 .icon-link {
@@ -265,3 +270,75 @@ ul.dashed > li:before {
 }
 
 .icon-link .social-icon { display: block; }  /* be explicit */
+
+
+/* Contact card under the social icons */
+.contact-card {
+  margin-top: 12px;
+  display: inline-block;   /* keeps it centered inside the centered <td> */
+  text-align: left;        /* left-align the lines themselves */
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-list li {
+  display: grid;
+  grid-template-columns: 72px 1fr;  /* label | value */
+  gap: 8px;
+  padding: 3px 0;
+  align-items: baseline;            /* align label & value on the text baseline */
+}
+
+/* Keep baseline alignment for normal text rows */
+.contact-list li { align-items: baseline; }
+
+/* Center the label with the icons in the Links row */
+.contact-list li.links-row { 
+  align-items: center; 
+}
+
+.contact-list .label {
+  color: #555;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-size: 0.85em;
+}
+
+/* keep values simple by default */
+.contact-list .value { 
+  position: static;
+}
+
+/* make the Links row a single flex row with spacing */
+.contact-list .value-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;                        /* space between icons */
+}
+
+/* apply rule to the text itself */
+.mono,
+.contact-link {
+  display: inline-block;                 /* width = text width */
+  border-bottom: 1px dotted currentColor;
+  padding-bottom: 2px;                   /* nice offset from text */
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--link-color);
+  text-decoration: none; /* dotted underline already provides feedback */
+  border-bottom-color: var(--link-color);
+}
+
+#about-me {
+  border-collapse: separate;     /* required for border-spacing to work */
+  border-spacing: 24px 0;        /* 24px horizontal, 0 vertical */
+}
