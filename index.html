@@ -1,6 +1,12 @@
 <head>
+  <meta charset="utf-8">
   <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@300..800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&display=swap" rel="stylesheet">
+
 
   <title> Adam Hastings, PhD Student, Computer Science </title>
   <style>
@@ -54,32 +60,55 @@
   <section id=content>
     <div>
       <a href=".">
-        <h1>Adam<br>Hastings</h1>
+        <h1>Adam K. Hastings, PhD</h1>
       </a>
     </div>
-    <div>
+    <div class="resume-format">
       <h2>Bio</h2>
       <table id=about-me class="table-class">
         <tr>
-          <td>
-            <img  draggable="false" onmousedown="return false" style="user-drag: none; user-select: none;" title="A photo of Adam Hastings" src=assets/images/fulton_st.png width=200px alt=photo_of_adam_hastings class="border-class">
+          <td style="text-align: center;">
+            <figure class="profile">
+          <img
+            src="assets/images/adamhastings.png"
+            width="200"
+            height="200"
+            alt="Portrait of Adam Hastings"
+            class="border-class profile-img"
+            draggable="false"
+            onmousedown="return false">
             <br>
-            <div class="grid-container">
-              <a href="https://www.linkedin.com/in/a-hastings/" target="_blank"><img src=assets/icons/linkedin.webp    width=40px alt=linkedin_logo class="border-class" draggable="false" onmousedown="return false" style="user-drag: none; user-select: none;"></a>
-              <a href="https://github.com/adamhastings"         target="_blank"><img src=assets/icons/github_round.png width=40px alt=github_logo   class="border-class" draggable="false" onmousedown="return false" style="user-drag: none; user-select: none;"></a>
-              <!-- <a href="https://x.com/traditionalboi"            target="_blank"><img src=assets/icons/twitter.png      width=40px alt=twitter_logo  class="border-class" draggable="false" onmousedown="return false" style="user-drag: none; user-select: none;"></a> -->
+            <div style="margin-top: 8px;">
+              <a href="https://www.linkedin.com/in/a-hastings/" target="_blank"  style="margin-right: 15px;">
+                <img src="assets/icons/linkedin.webp"
+                    width="40px"
+                    alt="linkedin_logo"
+                    class="border-class social-icon"
+                    draggable="false"
+                    onmousedown="return false"
+                    style="user-drag: none; user-select: none;">
+              </a>
+              <a href="https://github.com/adamhastings" target="_blank" style="margin-left: 15px;">
+                <img src="assets/icons/github_round.png"
+                    width="40px"
+                    alt="github_logo"
+                    class="border-class social-icon"
+                    draggable="false"
+                    onmousedown="return false"
+                    style="user-drag: none; user-select: none;">
+              </a>
             </div>
           </td>
           <td>
             <p>
-              I am an Assistant Professor in the Department of Computer and Information Sciences at Fordham University, located at the Lincoln Center campus in New York City.
+              I am an Assistant Professor at Fordham University in the Department of Computer and Information Sciences, located at the Lincoln Center campus in New York City.
               I am broadly interested in the intersection of computer systems, security, and economics, with a focus on how architectural and economic incentives shape the cybersecurity ecosystem. My research combines systems building, measurement, and modeling to better understand and improve the security and resilience of computing infrastructures.
             <!-- </p>
             <p> -->
-              I received my Ph.D. in Computer Science from Columbia University, where I worked under the supervision of Prof. Simha Sethumadhavan.
+              I received my PhD in Computer Science from Columbia University, where I worked under the supervision of Prof. Simha Sethumadhavan.
             </p>
             <p>
-              I am currently recruiting motivated Ph.D. students to join my research group. If you are interested in working on problems at the intersection of systems, security, and economics, please reach out.
+              I am currently recruiting motivated PhD students to join my research group. If you are interested in working on problems at the intersection of systems, security, and economics, please reach out.
             </p>
             <!-- <p>
               I am a recently-defended Ph.D. graduate from the Department of Computer Science at Columbia University, where I was advised by <a
@@ -173,37 +202,39 @@
         <p><b>B.Sc., Computer Engineering</b> <i>2012 &#8211 2016</i> <br>Brigham Young University</p>
       </div>
     </div> -->
-    <div class=resume-format>
-      <h2>Teaching</h2>
-      <div>
-        <p><b>Fordham University</b></p>
-        <ul>
-          <li>CISC 3595: Operating Systems, Fall 2025 (Instructor)</li>
-          <li>CISC 5595: Operating Systems, Fall 2025 (Instructor)</li>
-        </ul>
-      </div>
-      <div>
-        <p><b>Columbia University</b></p>
-      
-        <ul>
-          <li>COMS 6998-12: The Economics of Cybersecurity, Spring 2024 (Instructor)</li>
-          <li>CSEE 4824: Computer Architecture, Fall 2023 (TA)</li>
-          <li>CSEE 4824: Computer Architecture, Spring 2023 (TA)</li>
-          <li>COMS 6424: Hardware Security, Spring 2022 (TA)</li>
-          <li>COMS 4181: Security 1, Fall 2021 (TA)</li>
-          <li>CSEE 4824: Computer Architecture, Spring 2019 (TA)</li>
-        </ul>
-      </div>
-      <div>
-        <p><b>Brigham Young University</b></p>
-        <ul>
-          <li>ECEN 427: Embedded Linux Systems, Winter 2018 (TA)</li>
-          <li>ECEN 390: Junior Team Design Project (Laser Tag), Winter 2017 (TA)</li>
-          <li>ECEN 330: Intro to Embedded Systems, Winter 2017 (TA)</li>
-          <li>ECEN 301: Elements of Electrical Engineering, Summer 2016 (TA)</li>
-        </ul>
-      </div>
-    </div>
+    <div class="resume-format">
+  <h2>Teaching</h2>
+
+  <section class="teaching-block">
+    <h3>Fordham University</h3>
+    <ul class="course-list">
+      <li><span class="course">CISC 3595</span> — Operating Systems <span class="meta">· Fall 2025 · Instructor</span></li>
+      <li><span class="course">CISC 5595</span> — Operating Systems <span class="meta">· Fall 2025 · Instructor</span></li>
+    </ul>
+  </section>
+
+  <section class="teaching-block">
+    <h3>Columbia University</h3>
+    <ul class="course-list">
+      <li><span class="course">COMS 6998-12</span> — The Economics of Cybersecurity <span class="meta">· Spring 2024 · Instructor</span></li>
+      <li><span class="course">CSEE 4824</span> — Computer Architecture <span class="meta">· Fall 2023 · TA</span></li>
+      <li><span class="course">CSEE 4824</span> — Computer Architecture <span class="meta">· Spring 2023 · TA</span></li>
+      <li><span class="course">COMS 6424</span> — Hardware Security <span class="meta">· Spring 2022 · TA</span></li>
+      <li><span class="course">COMS 4181</span> — Security 1 <span class="meta">· Fall 2021 · TA</span></li>
+      <li><span class="course">CSEE 4824</span> — Computer Architecture <span class="meta">· Spring 2019 · TA</span></li>
+    </ul>
+  </section>
+
+  <section class="teaching-block">
+    <h3>Brigham Young University</h3>
+    <ul class="course-list">
+      <li><span class="course">ECEN 427</span> — Embedded Linux Systems <span class="meta">· Winter 2018 · TA</span></li>
+      <li><span class="course">ECEN 390</span> — Junior Team Design Project (Laser Tag) <span class="meta">· Winter 2017 · TA</span></li>
+      <li><span class="course">ECEN 330</span> — Intro to Embedded Systems <span class="meta">· Winter 2017 · TA</span></li>
+      <li><span class="course">ECEN 301</span> — Elements of Electrical Engineering <span class="meta">· Summer 2016 · TA</span></li>
+    </ul>
+  </section>
+</div>
 
     <div class=resume-format>
 

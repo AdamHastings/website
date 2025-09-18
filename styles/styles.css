@@ -1,5 +1,21 @@
+/* Load MightyEmpire (WOFF2 preferred, OTF fallback) */
+@font-face {
+  font-family: "MightyEmpire";
+  src:
+    /* url("../assets/fonts/MightyEmpire-Regular.woff2") format("woff2"), */
+    url("../assets/fonts/MightyEmpire-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Host Grotesk", system-ui, -apple-system, "Segoe UI",
+               Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
 h1{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: "MightyEmpire", Arial, Helvetica, sans-serif;
     text-align: right;
     border-color: black;
     border-style: solid;
@@ -9,16 +25,16 @@ h1{
     text-decoration: none;
     position: relative;
     min-width: 100;
-    max-width: 100;
-    font-size: 25;
+    max-width: 500;
+    font-size: 50;
   }
   
 h2{
   clear: both; 
-  font-family:monospace;
+  /* font-family:monospace; */
   font-weight:200;
   text-align:left;
-  font-size: 20;
+  font-size: 25;
   border-bottom: 2px solid black;
   padding: 10 10 10 0;
   text-decoration: none;
@@ -26,14 +42,15 @@ h2{
 
 h3{
   clear: both; 
-  font-family:Arial, Helvetica, sans-serif;
+  /* font-family:Arial, Helvetica, sans-serif; */
+  font-family: "Domine", Arial, Helvetica, sans-serif;
   text-align:left;
   padding: 10 20 10 20;
   font-size: 20
 }
 
 p{
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   padding: 0 30 0 30;
 }
 
@@ -62,11 +79,11 @@ p{
   border-width: 4;
   border-color: black;
   text-align: left;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 .table-class{
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   font-size: 16;
   padding: 50 0 50 0;
   max-width: 1000;
@@ -131,6 +148,15 @@ a:active {
   text-decoration: underline;
 }
 
+.social-icon {
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.15);
+  /* box-shadow: 0px 4px 12px rgba(0,0,0,0.25); */
+}
+
 html {
   overflow-y: scroll; 
 }
@@ -147,4 +173,66 @@ ul.dashed > li {
 ul.dashed > li:before {
   content: "-";
   text-indent: -20px;
+}
+
+/* Container */
+.resume-format {
+  max-width: 800px;
+  margin: 24px auto;
+}
+
+/* Section heading */
+.resume-format h2 {
+  clear: both;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-weight: 600;
+  text-align: left;
+  border-bottom: 2px solid black;
+  padding: 6px 0 10px 0;
+  margin: 0 0 12px 0;
+}
+
+/* Teaching indentation */
+.resume-format .teaching-block {
+  /* tweak these two values to taste */
+  --indent-school: 1.25rem;
+  --indent-course: 2.25rem;
+}
+
+.resume-format .teaching-block h3 {
+  padding-left: var(--indent-school);
+  margin: 0 0 6px 0;
+}
+
+.resume-format .teaching-block .course-list {
+  list-style: none;         /* keep your current look */
+  margin: 0;                /* you had ul { margin:0 } globally */
+  padding-left: var(--indent-course);
+}
+
+.resume-format .course-list li {
+  padding: 6px 0;
+  border-bottom: 1px dotted #ddd;  /* optional, for structure */
+}
+.resume-format .course-list li:last-child { border-bottom: none; }
+
+/* Tokens */
+.resume-format .course {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Courier New", monospace;
+  font-weight: 600;
+}
+
+.resume-format .meta {
+  color: #555;
+  font-size: 0.95em;
+}
+
+.profile-img { border-radius: 8px; }
+
+:root { --entry-font-size: 1rem; }  /* change once, applies everywhere */
+
+.resume-format .course-list li,
+.resume-format .pub-item {
+  font-size: var(--entry-font-size);
+  line-height: 1.5;
 }
